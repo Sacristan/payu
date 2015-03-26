@@ -59,7 +59,7 @@ module Payu
         options[:pay_type] = test_payment? ? 't' : nil
       end
 
-      Transaction.new(options)
+      PayU::Transaction.new(options)
     end
 
     def get(session_id)
